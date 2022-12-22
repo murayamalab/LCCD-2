@@ -1,0 +1,8 @@
+function Neuropil_Average = Sub_Calculate_AverageNeuropilSignal(Pixel, Neuropil_EachPixel)
+
+では、細胞体から1ピクセルごと離れたニューロピルシグナルがNeuropil_EachPixelに
+Neuropil_EachPixelを計算するために使ったピクセル数がPixelに格納されている。
+
+ピクセル数を重みとして、ニューロピルシグナルの重心を計算することで
+全範囲におけるニューロピルシグナルが計算される。
+
