@@ -1,16 +1,19 @@
 function MainFun_RegionMapping(atlas_path, path_10, out_path)
-%% Optional
-% ROI region mapping
+    %% Optional
+    % ROI region mapping
+    
+    %% Load data
+    atlas_dir = dir(fullfile(atlas_path, '/*.mat'));
+    Atlas = load(fullfile(atlas_dir.folder, atlas_dir.name)).Atlas;
+    region_info = load('NameColor.mat').NameColor;
+    roi_centroid = load(fullfile(path_10, 'ROI_metrics.mat')).ROI_metrics.Centroid;
+    region_idx = unique(Atlas);
 
-%% Load data
-%atlas_dir = dir(fullfile(atlas_path, '/*.mat'));
-%Atlas = load(fullfile(atlas_dir.folder, atlas_dir.name)).Atlas;
+    for i = 1:length(region_idx)
+        region_tmp = zeros(size(Atlas));
+        region_tmp(Atlas==region_idx(i))=1;
+        roi_region_tmp = roi_centroid.*region_tmp;
 
-
-
-
-
-
-
+    end
 end
 

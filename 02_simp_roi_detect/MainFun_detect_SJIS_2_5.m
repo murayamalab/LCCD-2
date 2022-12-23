@@ -56,7 +56,8 @@ function MainFun_detect_SJIS_2_5(in_path, out_path, options)
         mn = min(min(mask,[],1),[],2);
         %maskを0~1で規格（コントラスト強調を行った後、0~1で規格化）
         mask = (mask - mn)./(mx-mn);
-       
+        imwrite(double(mask), fullfile(out_path, sprintf('Image_std_%02d.tif',FNum)));
+
         %{
         level = graythresh(mask); % 閾値を決定
         BW = im2bw(mask,level); % しきい値に基づき、イメージをバイナリ イメージに変換

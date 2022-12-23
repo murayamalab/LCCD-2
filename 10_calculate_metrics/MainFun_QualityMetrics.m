@@ -92,11 +92,11 @@ function MainFun_QualityMetrics(path_03, path_06, path_09, out_path, options)
     % ROI metrics, SNR, Artifact Power Ratio, Area, Centroid, CellUse
     ROI_metrics = struct();
     ROI_metrics.SNR = single(Ratio);
-    ROI_metrics.Artifact = single(art_sig_ratio');
+    ROI_metrics.Artifact = single(art_sig_ratio);
     ROI_metrics.Area = single(c(:,1));
     ROI_metrics.Centroid = single(c(:,2:3));
     ROI_metrics.CellUse = logical(CellUse2);
-    save(fullfile(out_path,'/ROI_metrics.mat'), 'ROI_metrics', '-v7.3');
+    save(fullfile(out_path,'ROI_metrics.mat'), 'ROI_metrics', '-v7.3');
     
     fprintf(1,'\t\tPercentage of cells to use %f (%%)\n',sum(CellUse2)/length(CellUse2)*100);
     fprintf(1,'\t\tThe number of cells to use %d neurons\n',sum(CellUse2));

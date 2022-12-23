@@ -16,7 +16,7 @@ for ix=1:length(file_list)
 % 	                       'h5_filename', fullfile(out_path, sprintf('IMG_V%d.h5',ix)), ...
 % 	                       'mem_batch_size', 250,...
 % 	                       'us_fac',50);
-    options.h5_filename = fullfile(out_path, sprintf('IMG_V02%d.h5',ix));
+    options.h5_filename = fullfile(out_path, sprintf('IMG_V%02d.h5',ix));
     options = NoRMCorreSetParms(options);
     %fnam = fullfile(pnam, file_list(ix));
     y = loadtiff(fullfile(pnam, file_list{ix}));
