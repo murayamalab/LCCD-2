@@ -26,6 +26,8 @@
 3. ROI morphology
    - open ROI_Cell_color.tiff in 10_calculate_metrics
    - overlay z-projection image to the ROI_Cell_color and check the ROI poistion and morpholoy
+   ![ROI overlay](00_images/ROI_overlay.png "overlay")
+   
 4. Artifact detection
    - open Artifact_detection.pdf, Artifact_signal.pdf, and Cell_signal.pdf in 10_calculate_metrics and check the signals
 
