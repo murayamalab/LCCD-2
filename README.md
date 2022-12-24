@@ -22,9 +22,15 @@
 2. Misalignment of template
    - open image_std_xx.tif files in 02_simp_roi_detect in Fiji
    - stack images and check alignmend, then perform max intensitiy z-projection
+   
+      <img src="00_images/Motion_correction_templates.png" width="600">
+      
 3. ROI morphology
    - open ROI_Cell_color.tiff in 10_calculate_metrics
    - overlay z-projection image to the ROI_Cell_color and check the ROI poistion and morpholoy
+
+      <img src="00_images/ROI_overlay.png" width="600">
+      
 4. Artifact detection
    - open Artifact_detection.pdf, Artifact_signal.pdf, and Cell_signal.pdf in 10_calculate_metrics and check the signals
 
