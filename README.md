@@ -22,6 +22,7 @@
 2. Misalignment of template
    - open image_std_xx.tif files in 02_simp_roi_detect in Fiji
    - stack images and check alignmend, then perform max intensitiy z-projection
+   ![template alignment](00_images/Motion_correction_templates.png "templates")
 3. ROI morphology
    - open ROI_Cell_color.tiff in 10_calculate_metrics
    - overlay z-projection image to the ROI_Cell_color and check the ROI poistion and morpholoy
