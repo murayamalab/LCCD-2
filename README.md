@@ -1,9 +1,9 @@
 # Low computational-cost cell detection (LCCD) for a large field of view two-photon calcium imaging data
 
 ### Paper
-#### Low computational-cost cell detection method for calcium imaging data
+#### Low computational-cost cell detection method for calcium imaging data (Ito et al., Neuroscience Research, 2022)
 
-https://www.sciencedirect.com/science/article/pii/S016801022200075X
+https://doi.org/10.1016/j.neures.2022.02.008
 
 ### Requirement
 - Matlab
